@@ -1,0 +1,7 @@
+print("-"*50)
+print("Esse programa vai fazer a meida de combustível gasto.")
+print("-"*50)
+p = int(input("Digite a quantidade de listros de combustivel: "))
+o = int(input("Digite a quantidade de Km percurridos: "))
+print("-"*50)
+print(f"A meida de combustível gasto foi de {o/p :.2f} km/l.")
