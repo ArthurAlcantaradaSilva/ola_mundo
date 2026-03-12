@@ -1,4 +1,3 @@
-# Olá, mundo
-Primeiro repositório do curso de Git e GitHub
+# Meu portfolio
 
-Como vc está?
+Portfólio com projetos desenvolvidos durante meus estudos em HTML, CSS, JavaScript e Python.
