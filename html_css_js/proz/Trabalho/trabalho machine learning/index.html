@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="log.css">
+    <title>login do machine learning</title>
+</head>
+<body>
+
+    <div class="geral">
+        <div class="fot"></div>
+        <img class="foto" src="https://santodigital.com.br/wp-content/uploads/2020/12/o-impacto-machine-learning-na-tomada-de-decisoes-1.jpg">
+        <div id="tee"></div>
+
+        <div class="log">
+            
+        <h1 class="txt_logar"> login:  <input id="inome" name="nnome" type="text" placeholder="Seu nome"></h1>
+                                                                                                        
+        <h1 class="txt_logar"> senha:  <input id="isenha" name="nsenha" type="password" placeholder="Sua senha"></h1>
+        </div>
+        <br>
+        
+        <input id="j" class="botao" type="button" value="Enviar" onclick="login()">
+
+    </div>
+
+    <script>
+        function login(){
+            var nome = document.querySelector("input#inome").value;
+            var senha = document.querySelector("input#isenha").value;
+
+            var txt = document.querySelector("div#tee")
+            var interativo = "../interativo/interativo.html";
+
+            if (nome == "adm" && senha == 12345){
+                txt.innerHTML = ` <h3> O seu Login está correto!. </h3> `
+                window.location.href = interativo;
+            }else{
+                txt.innerHTML = ` <h3> Tente novamente! O seu login está errado. </h3> `
+            }
+                
+          }
+           
+
+        
+    
+    </script>
+
+
+
+
+</body>
+    
+
+</html>

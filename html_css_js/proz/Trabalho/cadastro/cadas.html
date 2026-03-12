@@ -1,0 +1,35 @@
+    <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="cadas.css">
+    <title>cadastro/Lunae</title>
+</head>
+<body>
+
+    <div class="cas">
+
+        <img class="Logo" src="../Fotos/''Logos''/Lunae_logo_foda.png" width="200px"><br>
+        <h1 class="T1">CADASTRO NA LUANE</h1>
+        
+        <h4 class="txt_cadastro">Nome: <input type="text" name="ncada_s" id="incada_s" placeholder="->DIGITE O SEU NOME."></h4>
+        <h4 class="txt_cadastro">Senha: <input type="password" name="nsenh_a" id="isenh_a" placeholder="->DIGITE A SUA SENHA."></h4>
+        <input id="botao" type="button" value="Enviar" onclick="enviar()">
+        
+    </div>
+
+    <script>
+        function enviar(){
+            const nome = document.getElementById("incada_s").value;
+            const senha = document.getElementById("isenh_a").value;
+
+            localStorage.setItem("nome_Usu",nome);
+            localStorage.setItem("senha_Usu",senha);
+
+            window.location.href = "../Login/login.html"
+        }
+    </script>
+
+</body>
+</html>

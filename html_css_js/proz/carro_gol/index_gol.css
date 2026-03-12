@@ -1,0 +1,50 @@
+body{
+    flex-wrap: wrap;
+    color: white;
+    background-color: black;
+    text-align: center;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+.logo{
+    border: 2px solid rgb(22, 3, 131);
+    border-radius: 25px;
+    width: 95%;
+    height: 455px;
+}
+.teto{
+    margin: 0 auto;
+    margin-top: 5px;
+    background-color: rgb(10, 0, 70);
+    text-align: justify;
+    justify-content: center;
+    width: 93%;
+    height: 100%;
+    border: 3px solid rgb(174, 174, 255);
+    border-radius: 20px;
+    padding: 20px;
+}
+.carro{
+    display: flex;
+    justify-content: center;
+}
+
+.carr1,.carr2{
+    margin: 0 auto;
+    margin-top: 5px;
+    text-align: center;
+    padding: 5px;
+}
+.car1,.car2{
+    width: 75%;
+    height: auto;
+    border: 3px solid white;
+}
+#tt1,#tt2{
+    font-size: 500%;
+}
+.por{
+    display: flex;
+    text-align: left;
+    font-size: 25px;
+    padding: 50px;
+}

@@ -1,0 +1,207 @@
+body {
+    transition: background-color 2.0s  ease;
+    box-sizing: border-box;
+    font-family: arial, helvetica, verdana;
+    font-size: 16px;
+    text-align: center;
+    background-color: #e2f76a;
+    flex-wrap: wrap;
+}
+
+header figure img {
+    height: 340px;
+    width: 1260px;
+}
+
+#dia, #tarde, #noite{
+    background-color: #909090;
+    text-align: center;
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+    padding: 5px;
+    margin: 10px;
+    margin-top: 10px;
+}
+
+#dia:hover, #tarde:hover, #noite:hover {
+    background-color: #020202;
+    color: white;
+    font-weight: bold;
+}
+
+/*
+#dia {
+    background-color: #909090;
+    text-align: center;
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+    padding: 5px;
+    margin: 10px;
+    margin-top: 10px;
+}
+
+#dia:hover {
+    background-color: #020202;
+    color: white;
+    font-weight: bold;
+}
+
+#tarde {
+    background-color: #909090;
+    text-align: center;
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+    padding: 5px;
+    margin: 10px;
+    margin-top: 10px;
+}
+#tarde:hover{
+    background-color: #020202;
+    color: white;
+    font-weight: bold;
+}
+
+#noite {
+    background-color:#909090;
+    text-align: center;
+    font-size: 15px;
+    color: black;
+    padding: 5px;
+    margin: 10px;
+    margin-top: 10px;
+}
+
+#noite:hover {
+    background-color: #020202;
+    color: white;
+    font-weight: bold;
+}
+*/
+.tudo{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Im1, .Im2, .Im3, .Im4{
+    border: solid 4px white;
+}
+
+.Q1, .Q2, .Q3, .Q4{
+    margin: 0 auto;
+    width: 250px;
+    height: 245px;
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 50px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    border: solid 5px rgb(255, 255, 255);
+}#pre1, #pre2, #pre3, #pre4{
+    background-color: rgb(176, 176, 176);
+    text-align: center;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    padding: 5px;
+    margin: 10px;
+    margin-top: 20px;
+}#pre1:hover, #pre2:hover, #pre3:hover, #pre4:hover{
+    background-color: #3125d6;
+    color: white;
+    font-weight: bold;
+}
+/*
+.Q1{
+    margin: 0 auto;
+    width: 250px;
+    height: 245px;
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 50px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    border: solid 5px rgb(255, 255, 255);
+}#pre1{
+    background-color:rgb(176, 176, 176);
+    text-align: center;
+    font-size: 20px;
+    color:white;
+    padding: 5px;
+    margin: 10px;
+    margin-top: 20px;
+}#pre1:hover{
+    background-color: #3125d6;
+    color: white;
+    font-weight: bold;
+}
+.Q2{
+    margin: 0 auto;
+    width: 250px;
+    height: 245px;
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 50px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    border: solid 5px rgb(255, 255, 255);
+}#pre2{
+    background-color:rgb(176, 176, 176);
+    text-align: center;
+    font-size: 20px;
+    color:white;
+    padding: 5px;
+    margin: 10px;
+    margin-top: 20px;
+}#pre2:hover{
+    background-color: #3125d6;
+    color: white;
+    font-weight: bold;
+}
+
+.Q3{
+    margin: 0 auto;
+    width: 250px;
+    height: 245px;
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 50px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    border: solid 5px rgb(255, 255, 255);
+}#pre3{
+    background-color: rgb(176, 176, 176);
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    padding: 5px;
+    margin: 10px;
+    margin-top: 20px;
+}#pre3:hover{
+    background-color: #3125d6;
+    color: white;
+    font-weight: bold;
+}
+
+.Q4{
+    margin: 0 auto;
+    width: 250px;
+    height: 245px;
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 50px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    border: solid 5px rgb(255, 255, 255);
+}#pre4{
+    background-color: rgb(176, 176, 176);
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    padding: 5px;
+    margin: 10px;
+    margin-top: 20px;
+}#pre4:hover{
+    background-color: #3125d6;
+    color: white;
+    font-weight: bold;
+}
+*/

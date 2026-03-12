@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="login.css">
+    <title>Lunae/login</title>
+</head>
+<body>    
+    <div class="senha">
+        
+        <img class="Logo" src="../Fotos/''Logos''/Lunae_logo_foda.png" width="200px"><br>
+
+        <h1 class="title">Bem-vindo a Lunae</h1>
+        <div id = "real"> </div>
+
+        <h4 class="txt_logar">Login: <input type="text" name="nlogin" id="ilogin" placeholder="->LOGIN"></h4>
+        <h4 class="txt_logar">Senha: <input type="password" name="nsenha" id="isenha" placeholder="->SENHA"> </h4>
+
+        <input id="En1" class="botao" type="button" value="Entra" onclick="entrar()"><br>
+        <input id="En2" class="botao" type="button" value="Fazer cadastro" onclick="cadastro()">
+    
+    </div>
+
+    <script>
+        function entrar(){
+            var login = document.querySelector("input#ilogin").value;
+            var senha = document.querySelector("input#isenha").value;
+            
+            const nome_Sal = localStorage.getItem('nome_Usu');
+            const senha_Sal = localStorage.getItem('senha_Usu');
+            
+            var txt = document.querySelector("div#real")
+            var index = "../index/ind.html";
+
+            if (login === nome_Sal && senha === senha_Sal) {
+                txt.innerHTML = `<h3>Tá tudo certo meu mano.</h3>`
+                window.location.href = index;
+
+            } else{
+                txt.innerHTML = `<h3>Login ou senha INCORRETOS.</h3>`
+            }
+        }
+
+        function cadastro(){
+            window.location.href = "../cadastro/cadas.html"
+        }
+        
+    </script>
+</body>
+</html>

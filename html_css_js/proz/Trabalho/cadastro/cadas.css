@@ -1,0 +1,47 @@
+body{
+    background-color: #929292;
+    font-size: 12pt;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*TITOLO*/
+.T1{
+    background-color: white;
+    border: solid 3px rgb(100, 54, 17);
+}
+/*Logo*/
+.Logo{
+    border: solid 5px rgb(100, 54, 17);
+}
+/*Parte do cadastro*/
+.cas{
+    background-color: rgb(241, 223, 183);
+    text-align: center;
+    padding: 20px;
+    color: rgb(100, 54, 17);
+    margin: 0 auto;
+    width: 385px;
+    height: 450px;
+    margin: 0px a;
+    margin-top: 200px;
+    margin-bottom: 50px;
+    border: solid 5px rgb(255, 166, 0);
+}
+/*BOTÃO*/
+#botao{
+    background-color: #909090;
+    text-align: center;
+    font-size: 15px;
+    color: black;
+    padding: 5px;
+    margin: 5px;
+    margin-top: 5px;
+    font-weight: bold;
+}#botao:hover{
+    background-color: rgb(255, 183, 89);
+    color: black;
+    font-weight: bold;
+}

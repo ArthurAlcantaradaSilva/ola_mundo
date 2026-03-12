@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="ind.css">
+    <title>Lunae</title>
+</head>
+
+<body>
+
+    <div>
+        <img id="dias" src = "../Fotos/DIA.jpg" alt="Não carregou">
+    </div>
+
+    <input id="dia" type="button" value="DIA" onclick="Dia()">
+    <input id="tarde" type="button" value="TARDE" onclick="Tar()">
+    <input id="noite" type="button" value="NOITE" onclick="Noi()">
+
+    <div class="tudo" >
+        <div  class="Q1">
+            <img class="Im1" src = "../Fotos/Di.jpg" alt="Não carregou"><br>
+            <input id="pre1" type="button" value="R$75,99">
+        </div>
+        
+        <div class="Q2">
+            <img class="Im2" src = "../Fotos/Di2.jpg" alt="Não carregou"><br>
+            <input id="pre2" type="button" value="R$55,00">
+        </div>
+        
+        <div class="Q3">
+            <img class="Im3" src = "../Fotos/No.jpg" alt="Não carregou"><br>
+            <input id="pre3" type="button" value="R$90,00">
+        </div>
+
+        <div class="Q4">
+            <img class="Im4" src="../Fotos/Ta.jpg" alt="Não carregou"><br>
+            <input id="pre4" type="button" value="R$30,00">
+        </div>
+    </div>
+
+    <footer>
+        <strong>
+            Lunae © 2025
+        </strong>
+    </footer>
+
+    <script>
+        let hora = new Date()
+        let horas = hora.getHours();
+        let serg = hora.getSeconds();
+
+        var cor1 = ["#e2f76a"]
+        var cor2 = ["#fcad3d"]
+        var cor3 = ["#160357"]
+        
+        /*Trocas dos horarios*/
+        function atul() {
+            let hora = new Date()
+            let serg = hora.getHours();
+
+            if (serg <= 6){
+                document.body.style.backgroundColor = cor1
+                document.getElementById("dias").src = "../Fotos/DIA.jpg"
+            }else if (serg >= 12){
+                document.body.style.backgroundColor = cor2
+                document.getElementById("dias").src = "../Fotos/TARDE.jpg"
+            }else if (serg > 18){
+                document.body.style.backgroundColor = cor3
+                document.getElementById("dias").src = "../Fotos/NOITE.jpg"
+            }
+        }
+        setInterval(atul,1000)
+        atul()
+
+        function Dia(){
+            /*Imagen grande*/
+            document.body.style.background = cor1
+            document.getElementById("dias").src ="../Fotos/DIA.jpg"
+        }
+        function Tar(){
+            document.body.style.background = cor2
+            document.getElementById("dias").src = "../Fotos/TARDE.jpg";
+        }
+        function Noi(){
+            document.body.style.background = cor3
+            document.getElementById("dias").src = "../Fotos/NOITE.jpg"
+        }
+        
+    </script>
+
+</body>
+</html>
